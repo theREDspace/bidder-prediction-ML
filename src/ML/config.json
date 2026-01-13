@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-01-05T14:18:44.666377",
+  "features": [
+    "bidder_id_encoded",
+    "width",
+    "height",
+    "aspect_ratio",
+    "is_mp4",
+    "min_dur",
+    "max_dur"
+  ],
+  "bidder_map": {
+    "bidderA": 0,
+    "bidderB": 1,
+    "bidderC": 2
+  },
+  "version": "v1.2.0"
+}

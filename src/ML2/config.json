@@ -1,0 +1,17 @@
+{
+  "version": "20260112-1442",
+  "features": [
+    "bidder_id_encoded",
+    "width",
+    "height",
+    "aspect_ratio",
+    "is_mp4",
+    "min_dur",
+    "max_dur"
+  ],
+  "bidder_map": {
+    "bidderA": 0,
+    "bidderB": 1,
+    "bidderC": 2
+  }
+}

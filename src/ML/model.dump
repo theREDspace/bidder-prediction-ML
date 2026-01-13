@@ -1,0 +1,944 @@
+booster[0]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0710424706
+	2:[width<720] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0
+			6:leaf=-0.0103896102
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:[bidder_id_encoded<1] yes=9,no=10,missing=10
+				9:leaf=0.0727272779
+				10:leaf=-0.0236686394
+			8:leaf=0.0695652217
+booster[1]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0666847825
+	2:[width<720] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0
+			6:leaf=-0.00979821663
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:[bidder_id_encoded<1] yes=9,no=10,missing=10
+				9:leaf=0.0677635372
+				10:leaf=-0.0222860016
+			8:leaf=0.0643033609
+booster[2]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0626608431
+	2:[width<720] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0
+			6:leaf=-0.00924050435
+		4:[bidder_id_encoded<1] yes=7,no=8,missing=8
+			7:leaf=0.0632414147
+			8:[width<1920] yes=9,no=10,missing=10
+				9:leaf=0.0937676206
+				10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=-0.084408395
+					12:leaf=0.0437634252
+booster[3]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0589279532
+	2:[width<720] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0
+			6:leaf=-0.00871454738
+		4:[bidder_id_encoded<1] yes=7,no=8,missing=8
+			7:leaf=0.0591052845
+			8:[width<1920] yes=9,no=10,missing=10
+				9:leaf=0.0877403244
+				10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=-0.0809867829
+					12:leaf=0.0411871076
+booster[4]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0554517694
+	2:[width<720] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0
+			6:leaf=-0.00821852405
+		4:[bidder_id_encoded<1] yes=7,no=8,missing=8
+			7:leaf=0.0553085282
+			8:[width<1920] yes=9,no=10,missing=10
+				9:leaf=0.082293205
+				10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=-0.077829048
+					12:leaf=0.038783364
+booster[5]:
+0:[width<300] yes=1,no=2,missing=2
+	1:leaf=-0.0786599517
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0335388742
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:[min_dur<15] yes=7,no=8,missing=8
+				7:leaf=-0.0922877118
+				8:leaf=0.0816612467
+			6:[min_dur<15] yes=9,no=10,missing=10
+				9:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=0.137759909
+					12:leaf=0.0421859138
+				10:[bidder_id_encoded<2] yes=13,no=14,missing=14
+					13:leaf=-0.0749015585
+					14:leaf=0.0183062125
+booster[6]:
+0:[width<300] yes=1,no=2,missing=2
+	1:leaf=-0.0756787956
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0315598622
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:[min_dur<15] yes=7,no=8,missing=8
+				7:leaf=-0.088217847
+				8:leaf=0.0767783746
+			6:[min_dur<15] yes=9,no=10,missing=10
+				9:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=0.128474236
+					12:leaf=0.0393628217
+				10:[bidder_id_encoded<2] yes=13,no=14,missing=14
+					13:leaf=-0.0721763372
+					14:leaf=0.0171907153
+booster[7]:
+0:[width<300] yes=1,no=2,missing=2
+	1:leaf=-0.0729052871
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0296981521
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:[min_dur<15] yes=7,no=8,missing=8
+				7:leaf=-0.0844979286
+				8:leaf=0.0723174736
+			6:[min_dur<15] yes=9,no=10,missing=10
+				9:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=0.120417237
+					12:leaf=0.0367515907
+				10:[bidder_id_encoded<2] yes=13,no=14,missing=14
+					13:leaf=-0.0696299598
+					14:leaf=0.0161451939
+booster[8]:
+0:[width<300] yes=1,no=2,missing=2
+	1:leaf=-0.0703152791
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0279460046
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:[min_dur<15] yes=7,no=8,missing=8
+				7:leaf=-0.0810796022
+				8:leaf=0.0682239458
+			6:[min_dur<15] yes=9,no=10,missing=10
+				9:[bidder_id_encoded<2] yes=11,no=12,missing=12
+					11:leaf=0.11336533
+					12:leaf=0.0343321636
+				10:leaf=-0.0276562665
+booster[9]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0428367965
+	2:[width<720] yes=3,no=4,missing=4
+		3:leaf=-0.00967801176
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0469770096
+			6:[width<1920] yes=7,no=8,missing=8
+				7:leaf=0.0609184317
+				8:leaf=-0.0161504112
+booster[10]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.040356297
+	2:[width<720] yes=3,no=4,missing=4
+		3:leaf=-0.00895368401
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0441392623
+			6:[width<1920] yes=7,no=8,missing=8
+				7:leaf=0.0576794855
+				8:leaf=-0.0150894793
+booster[11]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0380183905
+	2:[width<720] yes=3,no=4,missing=4
+		3:leaf=-0.00828310754
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[bidder_id_encoded<1] yes=7,no=8,missing=8
+				7:leaf=0.0414981768
+				8:leaf=-0.0177841261
+			6:leaf=0.0405282117
+booster[12]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0358134247
+	2:[width<720] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0.00325281732
+			6:leaf=-0.00967091974
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:[bidder_id_encoded<1] yes=9,no=10,missing=10
+				9:leaf=0.0390357114
+				10:leaf=-0.0167863891
+			8:leaf=0.0377937816
+booster[13]:
+0:[is_mp4<1] yes=1,no=2,missing=2
+	1:leaf=-0.0337328091
+	2:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:[min_dur<15] yes=5,no=6,missing=6
+			5:leaf=-0.0805190876
+			6:leaf=0.0576496199
+		4:[min_dur<15] yes=7,no=8,missing=8
+			7:[bidder_id_encoded<2] yes=9,no=10,missing=10
+				9:leaf=0.0850773677
+				10:leaf=0.0161038786
+			8:leaf=-0.0256694388
+booster[14]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.083035104
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0579654239
+			8:leaf=-0.0249722302
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0625111535
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0506885648
+			10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+				11:leaf=-0.0743391141
+				12:leaf=0.0105176354
+booster[15]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0172158685
+		4:leaf=-0.0806648582
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0586100519
+		6:[width<1920] yes=7,no=8,missing=8
+			7:leaf=0.0481291972
+			8:[bidder_id_encoded<2] yes=9,no=10,missing=10
+				9:leaf=-0.0717897639
+				10:leaf=0.00985661056
+booster[16]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0292433705
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0339921527
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0648907647
+			6:[bidder_id_encoded<2] yes=7,no=8,missing=8
+				7:leaf=-0.0693914145
+				8:leaf=-0.0104490696
+booster[17]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0803829059
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0526781678
+			8:leaf=-0.023374686
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0529582202
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0471835695
+			10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+				11:leaf=-0.0671281144
+				12:leaf=0.00989383273
+booster[18]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0295992438
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0321119204
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0603569858
+			6:[bidder_id_encoded<2] yes=7,no=8,missing=8
+				7:leaf=-0.0649864897
+				8:leaf=-0.00999770314
+booster[19]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0788167939
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0482384078
+			8:leaf=-0.022629207
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0479763262
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0463068299
+			10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+				11:leaf=-0.0629551634
+				12:leaf=0.00990036223
+booster[20]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0298529156
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0132245962
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00638458971
+			6:leaf=0.031101549
+booster[21]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0759674832
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0457309745
+			8:leaf=-0.0211654659
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0449596681
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0454895981
+			10:[bidder_id_encoded<2] yes=11,no=12,missing=12
+				11:leaf=-0.0615928359
+				12:leaf=0.00798509549
+booster[22]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0300610308
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0310935825
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0554142781
+			6:leaf=-0.0379715227
+booster[23]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0745653138
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0419070795
+			8:leaf=-0.020185655
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0408245586
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0447259918
+			10:leaf=-0.0250350218
+booster[24]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0301866718
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0118156914
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00677229464
+			6:leaf=0.0305037145
+booster[25]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0280875452
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0292872544
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.051450938
+			6:leaf=-0.0351434089
+booster[26]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.073164694
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0390192531
+			8:leaf=-0.0191908907
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0370143652
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0453963988
+			10:leaf=-0.0224634763
+booster[27]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0283440948
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.0110372026
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00579286693
+			6:leaf=0.029750362
+booster[28]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0112540619
+		4:leaf=-0.0710158199
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0348006748
+		6:[width<1920] yes=7,no=8,missing=8
+			7:leaf=0.0445529334
+			8:leaf=-0.0223421417
+booster[29]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0279401839
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0268219765
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0480751619
+			6:leaf=-0.0308178551
+booster[30]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0708980188
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0363681689
+			8:leaf=-0.0175853297
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.031665083
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0437341928
+			10:leaf=-0.0188560542
+booster[31]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0281239785
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00982730743
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=-0.000638714118
+			6:[min_dur<10] yes=7,no=8,missing=8
+				7:leaf=0.05472802
+				8:leaf=-0.00603885297
+booster[32]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0684103444
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0334443264
+			8:leaf=-0.0181819983
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0305756424
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0429674648
+			10:leaf=-0.0171618629
+booster[33]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0282517131
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00895253569
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00406469125
+			6:[bidder_id_encoded<2] yes=7,no=8,missing=8
+				7:leaf=0.00893748086
+				8:leaf=0.0395158157
+booster[34]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.0661755875
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0319591984
+			8:leaf=-0.0169900972
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0293063279
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0422469266
+			10:leaf=-0.017430041
+booster[35]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0283494201
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00815851521
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00507766148
+			6:[bidder_id_encoded<2] yes=7,no=8,missing=8
+				7:leaf=0.00805957429
+				8:leaf=0.0382316895
+booster[36]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0263915211
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00767312897
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00471138628
+			6:[bidder_id_encoded<2] yes=7,no=8,missing=8
+				7:leaf=0.00759462034
+				8:leaf=0.0360215567
+booster[37]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.00903379079
+		4:leaf=-0.0644038022
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0285775512
+		6:[width<1920] yes=7,no=8,missing=8
+			7:leaf=0.0428585373
+			8:leaf=-0.018936865
+booster[38]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0261374712
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00670344895
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=-2.06015138e-05
+			6:[min_dur<10] yes=7,no=8,missing=8
+				7:leaf=0.0499588288
+				8:leaf=-0.00694066379
+booster[39]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=-0.063309148
+		4:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0304218885
+			8:leaf=-0.0168159362
+	2:[bidder_id_encoded<1] yes=5,no=6,missing=6
+		5:leaf=0.0275968667
+		6:[width<1920] yes=9,no=10,missing=10
+			9:leaf=0.0420403592
+			10:leaf=-0.0172410645
+booster[40]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0263845213
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00609224569
+		4:[width<720] yes=5,no=6,missing=6
+			5:leaf=0.00356426905
+			6:[bidder_id_encoded<2] yes=7,no=8,missing=8
+				7:leaf=0.00676110247
+				8:leaf=0.036430642
+booster[41]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0178527739
+	2:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=0.0265101921
+		4:[width<1920] yes=5,no=6,missing=6
+			5:leaf=0.0412767828
+			6:leaf=-0.0174355097
+booster[42]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0261729695
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.023764275
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0458497033
+			6:leaf=-0.0254804585
+booster[43]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0175541397
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00142185518
+		4:leaf=0.0218559075
+booster[44]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0241498724
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.023296563
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0430565514
+			6:leaf=-0.0249676313
+booster[45]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0172854923
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00283723767
+		4:leaf=0.0207909327
+booster[46]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0223496221
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0228442159
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0404643081
+			6:leaf=-0.0244340654
+booster[47]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0170410946
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00405192887
+		4:leaf=0.0198502
+booster[48]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:[min_dur<15] yes=3,no=4,missing=4
+		3:leaf=-0.0740722641
+		4:leaf=0.034590438
+	2:[min_dur<15] yes=5,no=6,missing=6
+		5:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.060001839
+			8:leaf=0.0109690418
+		6:leaf=-0.0291187949
+booster[49]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0168289132
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00382705266
+		4:leaf=0.0193956513
+booster[50]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:[min_dur<15] yes=3,no=4,missing=4
+		3:leaf=-0.0713447258
+		4:leaf=0.0324785672
+	2:[min_dur<15] yes=5,no=6,missing=6
+		5:[bidder_id_encoded<2] yes=7,no=8,missing=8
+			7:leaf=0.0571026504
+			8:leaf=0.0108403163
+		6:leaf=-0.0281147845
+booster[51]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0166423433
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00362208299
+		4:leaf=0.0189727619
+booster[52]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0216320008
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0544015132
+			6:leaf=0.0107183373
+		4:leaf=-0.0271610375
+booster[53]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0165131241
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00258799852
+		4:leaf=0.0195158161
+booster[54]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0221601818
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00801023748
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=-0.00481679477
+			6:[min_dur<10] yes=7,no=8,missing=8
+				7:leaf=0.0450724028
+				8:leaf=-0.00201890222
+booster[55]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0163426008
+	2:[bidder_id_encoded<2] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0205277205
+			6:leaf=-0.0119153569
+		4:leaf=0.0203080159
+booster[56]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0209651459
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0224922094
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0347369462
+			6:leaf=-0.021739034
+booster[57]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0161787942
+	2:[bidder_id_encoded<2] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0187505465
+			6:leaf=-0.0101397065
+		4:leaf=0.0203923564
+booster[58]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0218722429
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0532306321
+			6:leaf=0.00984459184
+		4:leaf=-0.0254659336
+booster[59]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0160763226
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00288941409
+		4:leaf=0.0191161409
+booster[60]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0206880663
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00781434216
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=-0.00526390458
+			6:[min_dur<10] yes=7,no=8,missing=8
+				7:leaf=0.0425505452
+				8:leaf=-0.00092761562
+booster[61]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0158994384
+	2:[bidder_id_encoded<2] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0188863408
+			6:leaf=-0.01004133
+		4:leaf=0.0195551757
+booster[62]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0147028556
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00328933238
+		4:leaf=0.017002238
+booster[63]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0205816384
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.052179873
+			6:leaf=0.00956063531
+		4:leaf=-0.0257511828
+booster[64]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0204789639
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00729506416
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[bidder_id_encoded<1] yes=7,no=8,missing=8
+				7:leaf=-0.0040168683
+				8:leaf=0.00561178336
+			6:[width<720] yes=9,no=10,missing=10
+				9:leaf=0.00396359153
+				10:leaf=0.0363977216
+booster[65]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0145086199
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00358410226
+		4:leaf=0.0165711381
+booster[66]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0190596562
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0218702387
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.034222506
+			6:leaf=-0.0219847448
+booster[67]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0144981239
+	2:[bidder_id_encoded<2] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0176887792
+			6:leaf=-0.0095334528
+		4:leaf=0.0180246513
+booster[68]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0204962622
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0506809242
+			6:leaf=0.00982173625
+		4:leaf=-0.0249877255
+booster[69]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0145326061
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.0031486589
+		4:leaf=0.0170415752
+booster[70]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0189482886
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00738567812
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[bidder_id_encoded<1] yes=7,no=8,missing=8
+				7:leaf=-0.00449513411
+				8:leaf=0.00518788537
+			6:[width<720] yes=9,no=10,missing=10
+				9:leaf=0.00492056413
+				10:leaf=0.0340382867
+booster[71]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0187860616
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0488224216
+			6:leaf=0.0100715104
+		4:leaf=-0.0252515469
+booster[72]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0143815577
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00337185385
+		4:leaf=0.0166179445
+booster[73]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0185595751
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00705936924
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[bidder_id_encoded<1] yes=7,no=8,missing=8
+				7:leaf=-0.0033429265
+				8:leaf=0.00426096376
+			6:[width<720] yes=9,no=10,missing=10
+				9:leaf=0.00512094377
+				10:leaf=0.0325870104
+booster[74]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0131364865
+	2:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=0.0187650062
+		4:[width<1920] yes=5,no=6,missing=6
+			5:leaf=0.0373237841
+			6:leaf=-0.0158615988
+booster[75]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.018817056
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0214291792
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0337843187
+			6:leaf=-0.0208915304
+booster[76]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0189490002
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0468342826
+			6:leaf=0.00966569688
+		4:leaf=-0.0230918191
+booster[77]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.014324653
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00280239224
+		4:leaf=0.0174090043
+booster[78]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0183797088
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00683604879
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[bidder_id_encoded<1] yes=7,no=8,missing=8
+				7:leaf=-0.00394213619
+				8:leaf=0.00414781086
+			6:[width<720] yes=9,no=10,missing=10
+				9:leaf=0.0051349001
+				10:leaf=0.0331489034
+booster[79]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0130891874
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00375308166
+		4:leaf=0.015136431
+booster[80]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0171591192
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0204525534
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0327876024
+			6:leaf=-0.0209949445
+booster[81]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0187678169
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0454156846
+			6:leaf=0.0100971861
+		4:leaf=-0.0229357667
+booster[82]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0142470989
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00388769968
+		4:leaf=0.0163474064
+booster[83]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0131840697
+	2:[bidder_id_encoded<2] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0172650944
+			6:leaf=-0.0101086646
+		4:leaf=0.0165362041
+booster[84]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0181672592
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0440989807
+			6:leaf=0.0100316489
+		4:leaf=-0.022691559
+booster[85]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0132722305
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00239400635
+		4:leaf=0.0160098206
+booster[86]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0179936942
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00715242187
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[width<720] yes=7,no=8,missing=8
+				7:leaf=0.00243571564
+				8:leaf=-0.00263629039
+			6:[width<720] yes=9,no=10,missing=10
+				9:leaf=0.00621195091
+				10:leaf=0.0314086191
+booster[87]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0167970713
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00674264971
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:[width<720] yes=7,no=8,missing=8
+				7:leaf=0.00231152284
+				8:leaf=-0.00250370428
+			6:[width<720] yes=9,no=10,missing=10
+				9:leaf=0.00588267436
+				10:leaf=0.0296286922
+booster[88]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0121194292
+	2:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=0.0177732836
+		4:[width<1920] yes=5,no=6,missing=6
+			5:leaf=0.0356010497
+			6:leaf=-0.0156796556
+booster[89]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0171404835
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0198992472
+		4:[bidder_id_encoded<1] yes=5,no=6,missing=6
+			5:leaf=0.0321372747
+			6:leaf=-0.0199162606
+booster[90]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0180542506
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0428674519
+			6:leaf=0.00981358346
+		4:leaf=-0.0215856563
+booster[91]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0133130355
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00290941843
+		4:leaf=0.0160833877
+booster[92]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0168170258
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00658802176
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0.000463881297
+			6:[width<720] yes=7,no=8,missing=8
+				7:leaf=0.00575251784
+				8:leaf=0.0302776601
+booster[93]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0121839289
+	2:[width<1920] yes=3,no=4,missing=4
+		3:leaf=0.00375185697
+		4:leaf=0.0140206218
+booster[94]:
+0:[bidder_id_encoded<1] yes=1,no=2,missing=2
+	1:leaf=-0.0168959219
+	2:[min_dur<15] yes=3,no=4,missing=4
+		3:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=0.0419698507
+			6:leaf=0.0103054484
+		4:leaf=-0.0227105934
+booster[95]:
+0:[width<720] yes=1,no=2,missing=2
+	1:[bidder_id_encoded<2] yes=3,no=4,missing=4
+		3:leaf=-0.0143079655
+		4:leaf=-0.00443195505
+	2:[width<1920] yes=5,no=6,missing=6
+		5:leaf=0.00286861439
+		6:leaf=0.0145825325
+booster[96]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0165893901
+	2:[is_mp4<1] yes=3,no=4,missing=4
+		3:leaf=-0.00636013225
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0.000255889492
+			6:[width<720] yes=7,no=8,missing=8
+				7:leaf=0.00596505357
+				8:leaf=0.0282348748
+booster[97]:
+0:[width<720] yes=1,no=2,missing=2
+	1:leaf=-0.0114508001
+	2:[bidder_id_encoded<1] yes=3,no=4,missing=4
+		3:leaf=0.0173610579
+		4:[width<1920] yes=5,no=6,missing=6
+			5:leaf=0.0338280909
+			6:leaf=-0.0154679064
+booster[98]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0168978088
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0191814192
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0.00510492316
+			6:leaf=0.00415975973
+booster[99]:
+0:[aspect_ratio<1.20000005] yes=1,no=2,missing=2
+	1:leaf=-0.0157841332
+	2:[min_dur<10] yes=3,no=4,missing=4
+		3:leaf=0.0178123917
+		4:[bidder_id_encoded<2] yes=5,no=6,missing=6
+			5:leaf=-0.0047895629
+			6:leaf=0.00389642618
