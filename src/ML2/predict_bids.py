@@ -4,6 +4,7 @@ import lightgbm as lgb
 import pandas as pd
 import datetime
 from botocore.exceptions import NoCredentialsError
+from boto3.dynamodb.conditions import Key
 
 # --- Configuration ---
 BUCKET_NAME = 'prebid-server-s3-bucket' # TODO: Change this
@@ -11,43 +12,28 @@ S3_FOLDER = 'bid-prediction/dev'
 MODEL_FILE = '/tmp/model.txt'
 CONFIG_FILE = '/tmp/config.json'
 
+dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
+table = dynamodb.Table('PrebidBidReports')
+
+def get_latest_auctions(partition_key_value):
+    response = table.query(
+        # You must provide the Partition Key to use Query
+        KeyConditionExpression=Key('id').eq(partition_key_value),
+        
+        # This sorts by auctiontimestamp in descending order
+        ScanIndexForward=False, 
+        
+        # Limit the result set to 50
+        Limit=50
+    )
+    
+    return response.get('Items', [])
+
 def train_and_upload():
     # 1. Create Mock Data & Train (Same as before)
     # ---------------------------------------------------------
     print("⚡ Training LightGBM Model...")
-    raw_data = [
-        # --- Pattern: HD Content (1920x1080) ---
-        # Bidder A usually wins these. Bidder C wins if it's MP4. Bidder B ignores them.
-        {"id": "req_1", "video": {"mimes": "video/mp4", "minduration": 15, "maxduration": 30, "w": 1920, "h": 1080}, "bidders": ["bidderA", "bidderC"]},
-        {"id": "req_2", "video": {"mimes": "video/mp4", "minduration": 15, "maxduration": 30, "w": 1920, "h": 1080}, "bidders": ["bidderA"]},
-        {"id": "req_3", "video": {"mimes": "video/webm", "minduration": 15, "maxduration": 30, "w": 1920, "h": 1080}, "bidders": ["bidderA"]}, # C hates webm
-        {"id": "req_4", "video": {"mimes": "video/mp4", "minduration": 15, "maxduration": 30, "w": 1920, "h": 1080}, "bidders": ["bidderA", "bidderC"]},
-        {"id": "req_5", "video": {"mimes": "video/mp4", "minduration": 30, "maxduration": 60, "w": 1920, "h": 1080}, "bidders": ["bidderA", "bidderC"]},
-        {"id": "req_6", "video": {"mimes": "video/webm", "minduration": 15, "maxduration": 30, "w": 1920, "h": 1080}, "bidders": []}, # No one bid (maybe A was out of budget)
-
-        # --- Pattern: Mobile/Small Content (300x250) ---
-        # Bidder B dominates here. Bidder A ignores.
-        {"id": "req_7", "video": {"mimes": "video/mp4", "minduration": 5, "maxduration": 15, "w": 300, "h": 250}, "bidders": ["bidderB", "bidderC"]},
-        {"id": "req_8", "video": {"mimes": "video/mp4", "minduration": 5, "maxduration": 15, "w": 300, "h": 250}, "bidders": ["bidderB"]},
-        {"id": "req_9", "video": {"mimes": "video/webm", "minduration": 5, "maxduration": 15, "w": 300, "h": 250}, "bidders": ["bidderB"]}, # C hates webm
-        {"id": "req_10", "video": {"mimes": "video/mp4", "minduration": 5, "maxduration": 15, "w": 300, "h": 250}, "bidders": ["bidderB", "bidderC"]},
-        {"id": "req_11", "video": {"mimes": "video/mp4", "minduration": 5, "maxduration": 15, "w": 300, "h": 250}, "bidders": ["bidderB"]},
-        {"id": "req_12", "video": {"mimes": "video/webm", "minduration": 5, "maxduration": 15, "w": 300, "h": 250}, "bidders": []}, # B passed, C hates webm
-
-        # --- Pattern: Vertical Video (720x1280 - Mobile App style) ---
-        # Bidder B likes these too.
-        {"id": "req_13", "video": {"mimes": "video/mp4", "minduration": 10, "maxduration": 20, "w": 720, "h": 1280}, "bidders": ["bidderB", "bidderC"]},
-        {"id": "req_14", "video": {"mimes": "video/mp4", "minduration": 10, "maxduration": 20, "w": 720, "h": 1280}, "bidders": ["bidderB"]},
-        {"id": "req_15", "video": {"mimes": "video/mp4", "minduration": 10, "maxduration": 20, "w": 720, "h": 1280}, "bidders": ["bidderB", "bidderC"]},
-
-        # --- Pattern: Weird/Garbage Inventory ---
-        # Odd sizes or constraints. Very low bid rate.
-        {"id": "req_16", "video": {"mimes": "video/webm", "minduration": 60, "maxduration": 120, "w": 100, "h": 100}, "bidders": []},
-        {"id": "req_17", "video": {"mimes": "video/mp4", "minduration": 0, "maxduration": 5, "w": 50, "h": 50}, "bidders": []},
-        {"id": "req_18", "video": {"mimes": "video/mp4", "minduration": 15, "maxduration": 30, "w": 300, "h": 250}, "bidders": ["bidderB"]}, # Standard mobile again
-        {"id": "req_19", "video": {"mimes": "video/mp4", "minduration": 15, "maxduration": 30, "w": 1920, "h": 1080}, "bidders": ["bidderA"]}, # Standard HD again
-        {"id": "req_20", "video": {"mimes": "video/webm", "minduration": 15, "maxduration": 30, "w": 300, "h": 250}, "bidders": ["bidderB"]},
-    ]
+    raw_data = get_latest_auctions('SiteID_123')  # Example Partition Key Value
     
     rows = []
     all_bidders = ["bidderA", "bidderB", "bidderC"]
@@ -56,10 +42,10 @@ def train_and_upload():
         vid = req['video']
         winners = set(req['bidders'])
         base_feats = {
-            'width': vid['w'], 'height': vid['h'],
-            'aspect_ratio': vid['w']/vid['h'] if vid['h'] else 0,
+            'width': float(vid['w']), 'height': float(vid['h']),
+            'aspect_ratio': float(vid['w'])/float(vid['h']) if vid['h'] else 0,
             'is_mp4': 1 if 'mp4' in vid['mimes'] else 0,
-            'min_dur': vid['minduration'], 'max_dur': vid['maxduration']
+            'min_dur': float(vid['minduration']), 'max_dur': float(vid['maxduration'])
         }
         for bidder in all_bidders:
             row = base_feats.copy()
