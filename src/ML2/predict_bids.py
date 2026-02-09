@@ -39,13 +39,13 @@ def train_and_upload():
     all_bidders = ["bidderA", "bidderB", "bidderC"]
     
     for req in raw_data:
-        vid = req['video']
+        data = req.get('video', {})
         winners = set(req['bidders'])
         base_feats = {
-            'width': float(vid['w']), 'height': float(vid['h']),
-            'aspect_ratio': float(vid['w'])/float(vid['h']) if vid['h'] else 0,
-            'is_mp4': 1 if 'mp4' in vid['mimes'] else 0,
-            'min_dur': float(vid['minduration']), 'max_dur': float(vid['maxduration'])
+            'width': float(data['w']), 'height': float(data['h']),
+            'aspect_ratio': float(data['w'])/float(data['h']) if data['h'] else 0,
+            'is_mp4': 1 if 'mp4' in data['mimes'] else 0,
+            'min_dur': float(data.get('minDuration', 0)), 'max_dur': float(data.get('maxDuration', 0))
         }
         for bidder in all_bidders:
             row = base_feats.copy()
